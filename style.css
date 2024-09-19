@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 100%;
+    height: 100px;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+ .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+ul{
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+    font: bold;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover {
+    color: #fac031;
+}
+
+.icone i{
+    margin: 0 5px;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icone i:hover{
+    color: #fac031;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 130px;
+}
+.main_text h1 {
+    font-size: 60px;
+    position: relative;
+    left: 20px;
+    top: -90px;
+}
+
+.main_text h1 span {
+    font-size: 70px;
+    font-family: mv boli;
+    color: #fac031;
+    line-height: 22px;
+    margin-left:15px;
+}
